@@ -13,13 +13,16 @@ const getPlaceById = async (req, res, next) => {
   try {
     place = await Place.findById(placeId);
   } catch (err) {
-    const error = new HttpError("Could not find a place.", 500);
+    const error = new HttpError(
+      "Something went wrong, could not find a place.",
+      500
+    );
     return next(error);
   }
 
   if (!place) {
     const error = new HttpError(
-      "Could not find a place for the provided id.",
+      "Could not find place for the provided id.",
       404
     );
     return next(error);
@@ -80,12 +83,15 @@ const createPlace = async (req, res, next) => {
   try {
     user = await User.findById(creator);
   } catch (err) {
-    const error = new HttpError("Creating place failed, please try again", 500);
+    const error = new HttpError(
+      "Creating place failed, please try again.",
+      500
+    );
     return next(error);
   }
 
   if (!user) {
-    const error = new HttpError("Could not find user for provided id", 404);
+    const error = new HttpError("Could not find user for provided id.", 404);
     return next(error);
   }
 
@@ -167,8 +173,8 @@ const deletePlace = async (req, res, next) => {
   try {
     const sess = await mongoose.startSession();
     sess.startTransaction();
-    await place.remove({ session: sess });
-    place.creator.places.pull(place);
+    await place.deleteOne({ session: sess });
+    await place.creator.places.pull(place);
     await place.creator.save({ session: sess });
     await sess.commitTransaction();
   } catch (err) {
