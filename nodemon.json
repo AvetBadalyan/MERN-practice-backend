@@ -1,0 +1,8 @@
+{
+  "env": {
+    "DB_USER": "avet-badalyan",
+    "DB_PASSWORD": "Ufar280-444",
+    "DB_NAME": "myDatabase",
+    "JWT_KEY": "supersecret_dont_share"
+  }
+}
