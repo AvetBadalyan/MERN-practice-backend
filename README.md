@@ -1,6 +1,6 @@
 # MERN project practice
 
-This repository contains the backend application for Avet's MERN project practice, which is a web application that allows users can sign up and add places with description and address uploading images - the main purpose of this app is to practice MERN - MongoDB, Express JS, React JS and Node JS as a Junior Fullstack Developer.
+This repository contains the backend application for Avet's MERN project practice, which is a web application that allows users to sign up, add places with description and address, to upload images - the main purpose of this app is to practice MERN - MongoDB, Express JS, React JS and Node JS as a Junior Fullstack Developer.
 
 [Link to Frontend Repo](https://github.com/AvetBadalyan/MERN-practice-frontend.git)
 
