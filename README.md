@@ -1,6 +1,10 @@
-`# Your Backend Application Name
+# MERN project practice
 
 This repository contains the backend application for Avet's MERN project practice, which is a web application that allows users can sign up and add places with description and address uploading images - the main purpose of this app is to practice MERN - MongoDB, Express JS, React JS and Node JS as a Junior Fullstack Developer.
+
+[Link to Frontend Repo](https://github.com/AvetBadalyan/MERN-practice-frontend.git)
+
+[Link to Deployed App Page](https://mern-project-front.web.app/)
 
 ## Getting Started
 
@@ -19,33 +23,34 @@ Before you begin, ensure you have the following dependencies installed:
    ```bash
    git clone https://github.com/your-username/your-project.git `
 
-1.  Install dependencies:
+   ```
 
-    bashCopy code
+1. Install dependencies:
 
-    `cd your-project
-    npm install`
+   bashCopy code
 
-2.  Set up your environment variables:
+   `cd your-project
+npm install`
 
-    Create a `.env` file in the root directory and include the following variables:
+1. Set up your environment variables:
 
-    envCopy code
+   Create a `.env` file in the root directory and include the following variables:
 
-    `PORT=5000
-    DB_USER=your-mongodb-username
-    DB_PASSWORD=your-mongodb-password
-    DB_NAME=your-mongodb-database-name
-    JWT_KEY=your-secret-jwt-key`
+   envCopy code
 
-3.  Start the server:
+   `PORT=5000
+DB_USER=your-mongodb-username
+DB_PASSWORD=your-mongodb-password
+DB_NAME=your-mongodb-database-name
+JWT_KEY=your-secret-jwt-key`
 
-    bashCopy code
+1. Start the server:
 
-    `npm start`
+   bashCopy code
 
-API Endpoints
--------------
+   `npm start`
+
+## API Endpoints
 
 ### Places
 
@@ -83,16 +88,14 @@ Create a new user account.
 
 Login with an existing user account.
 
-Built With
-----------
+## Built With
 
--   Node.js
--   Express.js
--   MongoDB
--   Mongoose
--   JWT for authentication
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT for authentication
 
-Authors
--------
+## Authors
 
--   Avet Badalyan
+- Avet Badalyan
